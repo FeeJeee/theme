@@ -1,0 +1,144 @@
+/*
+Theme Name: Test_them
+Theme URI:
+Author: FeeJee
+Description: На этой странице отображен результат тестового задания
+Version: 0.1
+*/
+
+body {
+	font-family: "Montserrat-Regular", sans-serif;
+}
+
+.red {
+	color: green;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.open_modal {
+	cursor: pointer;
+	text-decoration: underline;
+	color: #0a4b78;
+}
+
+.modal {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 99998;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	visibility: hidden;
+	opacity: 0;
+
+}
+.modal_box {
+	background-color: white;
+	max-width: 350px;
+	padding: 25px;
+	z-index: 1;
+	margin: 30px 15px;
+	border: black solid 1px;
+}
+
+.modal_head {
+	text-align: right;
+}
+
+.modal_body {
+}
+
+.modal.open {
+	visibility: visible;
+	opacity: 1;
+}
+
+.modal.open .modal_body {
+
+}
+
+.modal_button {
+	all: unset;
+	width: 100%;
+	background-color: #333333;
+	color: white;
+	padding: 0;
+	margin:  5px 0;
+	height: 35px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.modal_button:hover {
+	background-color: white;
+	color: #333333;
+	outline: #333333 solid 1px;
+}
+
+.modal_form {
+
+}
+
+.modal_form_input {
+	all: unset;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0 0 0 5px;
+	outline:black solid 1px;
+	margin: 10px 0;
+	height: 35px;
+}
+
+.modal_label {
+	font-size: 25px;
+	margin: 0 0 5px 0;
+	text-align: center;
+}
+
+.modal_close_button {
+	all: unset;
+	margin: 0;
+	text-align: right;
+	cursor: pointer;
+}
+
+.form_checkbox {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 5px 0;
+}
+
+.form_checkbox input {
+	margin: 0 10px 0 5px;
+	width: 20px;
+	height: 20px;
+	background: none;
+}
+
+.form_error {
+	margin:  5px 0 ;
+	color: red;
+}
+
+.send_status {
+	margin: 5px 0;
+}
+
+li {
+	color: #333333;
+	margin: 20px 0;
+}
+
+.meta_tags li {
+	list-style-type: none;
+	font-weight: bold;
+}
